@@ -1,11 +1,3 @@
-/* ************************************************************************
-> File Name:     skiplist.h
-> Author:        程序员Carl
-> 微信公众号:    代码随想录
-> Created Time:  Sun Dec  2 19:04:26 2018
-> Description:   
- ************************************************************************/
-
 #include <iostream> 
 #include <cstdlib>
 #include <cmath>
@@ -255,7 +247,7 @@ void SkipList<K, V>::load_file() {
         if (key->empty() || value->empty()) {
             continue;
         }
-        insert_element(*key, *value);
+        insert_element(stoi(*key), *value);
         std::cout << "key:" << *key << "value:" << *value << std::endl;
     }
     delete key;
